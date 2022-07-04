@@ -12,5 +12,9 @@
 		init-method="init" destroy-method="destroy">
 		<property name="price" value="150" />
 	</bean>
+	
+	<bean class="com.tushar.springcore.lifecycle.IceCream" name="ic">
+		<property name="price" value="250" />
+	</bean>
 
 </beans>
