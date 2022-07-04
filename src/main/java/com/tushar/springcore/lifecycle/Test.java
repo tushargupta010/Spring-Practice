@@ -16,6 +16,9 @@ public class Test {
 		IceCream iceCream = (IceCream) context.getBean("ic");
 		System.out.println(iceCream);
 		
+		System.out.println("===================");
+		Chair chair = (Chair) context.getBean("chair");
+		System.out.println(chair);
 		
 		// registering shutdown hook
 		context.registerShutdownHook();
