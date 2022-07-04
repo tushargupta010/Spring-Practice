@@ -3,12 +3,12 @@ package com.tushar.springcore.autowire.annotations;
 import org.springframework.beans.factory.annotation.Autowired;
 
 public class Student {
-	// property injection
-	@Autowired
 	private Book book;
 	public Book getBook() {
 		return book;
 	}
+	// setter injection
+	@Autowired
 	public void setBook(Book book) {
 		this.book = book;
 	}
