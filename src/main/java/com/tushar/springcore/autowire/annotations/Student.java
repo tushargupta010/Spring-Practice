@@ -7,11 +7,11 @@ public class Student {
 	public Book getBook() {
 		return book;
 	}
-	// setter injection
-	@Autowired
 	public void setBook(Book book) {
 		this.book = book;
 	}
+	// constructor injection
+	@Autowired
 	public Student(Book book) {
 		super();
 		this.book = book;
