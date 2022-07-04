@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+ 	https://www.springframework.org/schema/beans/spring-beans.xsd
+ 	http://www.springframework.org/schema/context
+ 	https://www.springframework.org/schema/beans/spring-context.xsd">
+ 	
+ 	<bean name="employee" class="com.tushar.springcore.collections.Employee" p:id="101" p:name="Tushar">
+ 		<property name="phones">
+ 			<list>
+ 				<value>90174592</value>
+ 				<value>90174593</value>
+ 				<value>90174656</value>
+ 				<value>901745646</value>
+ 				<value>null</value>
+ 			</list>
+ 		</property> 	
+ 		<property name="addresses">
+ 			<set>
+ 				<value>Delhi</value>
+ 				<value>Gurugram</value>
+ 				<value>Noida</value>
+ 				<value>Dubai</value>
+ 				<value>null</value>
+ 			</set>
+ 		</property> 	
+ 		<property name="courses">
+ 			<map>
+ 				<entry key="java" value="2 Months" />
+ 				<entry key="python" value="1 Months" />
+ 				<entry key="javascript" value="2 Months" />
+ 			</map>
+ 		</property>
+ 		<property name="properties">
+ 			<props>
+ 				<prop key="url">url</prop>
+ 				<prop key="user">user</prop>
+ 				<prop key="pass">pass</prop>
+ 			</props>
+ 		</property> 	
+ 	</bean>
+ 	
+</beans>

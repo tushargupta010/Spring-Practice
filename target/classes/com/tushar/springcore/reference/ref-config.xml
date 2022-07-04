@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+ 	https://www.springframework.org/schema/beans/spring-beans.xsd
+ 	http://www.springframework.org/schema/context
+ 	https://www.springframework.org/schema/beans/spring-context.xsd">
+
+	<bean name="bref" class="com.tushar.springcore.reference.B"
+		p:y="101">
+	</bean>
+	
+	<bean name="aref" class="com.tushar.springcore.reference.A"
+		p:x="102" p:objB-ref="bref" />
+		
+	<!-- <bean name="aref" class="com.tushar.springcore.reference.A"
+		p:x="102">
+		<property name="objB" ref="bref" />
+		<property name="objB">
+			<ref bean="bref"/>
+		</property>
+	</bean> -->
+
+</beans>
