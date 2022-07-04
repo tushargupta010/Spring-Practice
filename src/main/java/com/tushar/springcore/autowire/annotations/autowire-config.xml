@@ -13,6 +13,9 @@
      <bean class="com.tushar.springcore.autowire.annotations.Book" name="book123">
      	<property name="name" value="The Invisible Man" />
      </bean>
+     <bean class="com.tushar.springcore.autowire.annotations.Book" name="book111">
+     	<property name="name" value="Revolution 2020" />
+     </bean>
      
      <bean class="com.tushar.springcore.autowire.annotations.Student" name="student" />
      
