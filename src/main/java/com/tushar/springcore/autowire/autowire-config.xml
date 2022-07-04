@@ -9,16 +9,19 @@
                
      <!-- <context:annotation-config/> -->
      
-     <!-- <bean class="com.tushar.springcore.autowire.Book" name="book">
+     <bean class="com.tushar.springcore.autowire.Book" name="book">
      	<property name="name" value="The Invisible Man" />
-     </bean> -->
+     </bean>
      
      <bean class="com.tushar.springcore.autowire.Book" name="b">
      	<property name="name" value="The Invisible Man" />
      </bean>
      
+     <bean class="com.tushar.springcore.autowire.Book" name="b1">
+     	<property name="name" value="The Invisible Man" />
+     </bean>
      
-     <bean class="com.tushar.springcore.autowire.Student" name="student" autowire="byType" />
+     <bean class="com.tushar.springcore.autowire.Student" name="student" autowire="constructor" />
      
      
 </beans>
