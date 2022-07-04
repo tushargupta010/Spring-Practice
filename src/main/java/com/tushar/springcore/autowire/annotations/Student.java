@@ -1,6 +1,7 @@
 package com.tushar.springcore.autowire.annotations;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 
 public class Student {
 	private Book book;
@@ -12,7 +13,7 @@ public class Student {
 	}
 	// constructor injection
 	@Autowired
-	public Student(Book book) {
+	public Student(@Qualifier("book111")Book book) {
 		super();
 		this.book = book;
 	}
