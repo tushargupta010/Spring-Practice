@@ -12,9 +12,11 @@
      <!-- <bean class="com.tushar.springcore.autowire.Book" name="book">
      	<property name="name" value="The Invisible Man" />
      </bean> -->
+     
      <bean class="com.tushar.springcore.autowire.Book" name="b">
      	<property name="name" value="The Invisible Man" />
      </bean>
+     
      
      <bean class="com.tushar.springcore.autowire.Student" name="student" autowire="byType" />
      
