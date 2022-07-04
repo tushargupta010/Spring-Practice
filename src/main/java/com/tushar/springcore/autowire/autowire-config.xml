@@ -7,21 +7,12 @@
            http://www.springframework.org/schema/context
            http://www.springframework.org/schema/context/spring-context-3.0.xsd">
                
-    <!-- <context:annotation-config/> -->
+     <!-- <context:annotation-config/> -->
      
-	<bean class="com.tushar.springcore.lifecycle.Apple" name="apple"
-		init-method="init" destroy-method="destroy">
-		<property name="price" value="150" />
-	</bean>
-	
-	<bean class="com.tushar.springcore.lifecycle.IceCream" name="ic">
-		<property name="price" value="250" />
-	</bean>
-	
-	<bean class="com.tushar.springcore.lifecycle.Chair" name="chair">
-		<property name="qty" value="10" />
-	</bean>
-	
-	<bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor" />
-
+     <bean class="com.tushar.springcore.autowire.Book" name="book">
+     	<property name="name" value="The Invisible Man" />
+     </bean>
+     <bean class="com.tushar.springcore.autowire.Student" name="student" autowire="byName" />
+     
+     
 </beans>
